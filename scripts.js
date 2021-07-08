@@ -1,27 +1,25 @@
-//1
+//1. Cambia el título "Generation 1 Pokémon" por "Generasión 1 Pokimon". */
 document.querySelector("#gen-1").innerHTML = "Generasión 1 Pokimon"
-//2
+
+//2. Cambia el color de fondo de la primera generación de Pokimon.
 let fondo = document.querySelector(".infocard-list.infocard-list-pkmn-lg").querySelectorAll(".infocard")
 for (let i = 0; i < fondo.length; i++) {
     fondo[i].style.backgroundColor = "red"    
 }
-
-// Apartado 3. Imprime por consola la URL de la página.
+//3. Imprime por consola la URL de la página.
 
 let currURL = window.location.href;
 console.log(currURL);
 
-// Apartado 4. Imprime por consola el dominio de la página.
+//4. Imprime por consola el dominio de la página.
 
 let currDom = window.location.hostname;
 console.log(currDom);
 
-// 5. 
-
+// 5. Imprime todos los nodos de imagen.
 for (let i = 0; i < images.length; i++) {
     document.querySelectorAll("images[i]").src   
 }
-
 // ó
 
 function printImageNodes() {
@@ -29,8 +27,7 @@ function printImageNodes() {
     console.log(imageNodes);
 }
 
-//6
-
+//6. Sustituye el atributo "src" de todas las imágenes por este "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
 function changeNicholas() {
     let photos = document.querySelectorAll("div:nth-child(n) > div:nth-child(n) > span > a > img");
     for (let i = 0; i <= photos.length; i++) {
@@ -38,3 +35,5 @@ function changeNicholas() {
       console.log(`El nombre es: ${photo}`);
     }
   }
+
+  // Comentario
